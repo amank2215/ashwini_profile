@@ -1,0 +1,21 @@
+body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f7f7f7; color:#2c2c2c; }
+nav { position:fixed; width:100%; background:#1f1f1f; padding:15px 40px; z-index:100; }
+nav ul { list-style:none; display:flex; gap:25px; justify-content:flex-end; }
+nav a { color:white; text-decoration:none; position:relative; }
+nav a::after { content:''; height:2px; width:0; background:#c9a24d; position:absolute; left:0; bottom:-5px; transition:.3s; }
+nav a:hover::after { width:100%; }
+
+.section { padding:90px 60px; }
+.light { background:white; border-radius:12px; margin:40px; }
+
+.hero-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:40px; }
+.hero-photos img { width:100%; border-radius:12px; margin-bottom:15px; transition:.3s; }
+.hero-photos img:hover { transform:scale(1.03); }
+
+.info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:20px 0; }
+.family p { margin:8px 0; }
+
+.fade { opacity:0; transform:translateY(30px); transition:1s; }
+.fade.show { opacity:1; transform:none; }
+
+footer { background:#1f1f1f; color:#ccc; text-align:center; padding:20px; }
